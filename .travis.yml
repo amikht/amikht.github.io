@@ -1,0 +1,26 @@
+# Misc setup to let Jarvis know which version of Node we are using
+language: node_js
+node_js:
+  - 12
+
+# Cache modules for quicker build times
+cache:
+  directories:
+  - src/node_modules
+
+# NPM commands to build site
+script:
+  - cd src # Moves to the /src directory to ensure the Next commands run
+  - npm install
+  - npm run build
+  - npm run export # runs Next.js' built in static site builder
+  - echo > out/.nojekyll # Tells Github not to use Jekyll
+
+# Information to let Jarvis know how to deploy the site properly
+deploy:
+  provider: pages # Lets Jarvis know this is a Github Pages site
+  skip_cleanup: true
+  github_token: $github_token #repo access token gathered from jarvis config
+  local_dir: out
+  on:
+    branch: main
