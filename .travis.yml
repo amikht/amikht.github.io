@@ -6,7 +6,7 @@ node_js:
 # Cache modules for quicker build times
 cache:
   directories:
-  - node_modules
+  - src/node_modules
 
 # NPM commands to build site
 script:
