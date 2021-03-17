@@ -10,6 +10,7 @@ cache:
 
 # NPM commands to build site
 script:
+  - cd src # Moves to the /src directory to ensure the Next commands run
   - npm run build
   - npm run export # runs Next.js' built in static site builder
   - touch out/.nojekyll # Tells Github not to use Jekyll
