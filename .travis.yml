@@ -14,6 +14,7 @@ script:
   - npm install
   - npm run build
   - npm run export # runs Next.js' built in static site builder
+  - cd ..
   - echo > out/.nojekyll # Tells Github not to use Jekyll
 
 # Information to let Jarvis know how to deploy the site properly

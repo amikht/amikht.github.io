@@ -1,4 +1,6 @@
-import Head from 'next/head'
+import "bootstrap/dist/css/bootstrap.min.css"
+import Head from 'next/head';
+import { Jumbotron } from 'reactstrap';
 
 export default function Home() {
   return (
@@ -6,13 +8,12 @@ export default function Home() {
         <Head>
             {/*TODO: Fill this in later.*/}
         </Head>
-        <h1>
-            HELLO WORLD!
-        </h1>
-        <br />
-        <p>Hey there! If you're seeing this, my site is officially being built on next.js!
-            <br />
-           Hopefully that means that very very soon, this should be a much more interesting site to look at!</p>
+        <Jumbotron>
+        <h1 className="display-3">Hello, world!</h1>
+        <p className="lead">I'm Aaron Thompson, and this is (going to be) my beautiful personal site and portfolio!</p>
+        <hr className="my-2" />
+        <p>There's not much to look at just yet, but I'm working hard every day to make this into something beautiful. I hope to have a more fully functional site available to show you soon. Thanks for your patience!</p>
+        </Jumbotron>    
     </div>
   )
 }
