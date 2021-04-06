@@ -3,39 +3,24 @@ import { Navbar, Container, Row, Col, NavItem, NavLink, NavbarBrand, Nav } from 
 
 export default function Home() {
   return (
-    <div>
+    <div className="vh-100">
         <Head>
             {/*TODO: Fill this in later.*/}
         </Head>
-        <Navbar color="dark" dark expand="md">
-            <NavbarBrand href="/">Aaron Makes Tech</NavbarBrand>
-            <Nav className="ml-auto" navbar>
-                <NavItem >
-                    <NavLink href="/">Blog</NavLink>
-                </NavItem>
-                <NavItem >
-                    <NavLink href="/">Projects</NavLink>
-                </NavItem>
-            </Nav>
-        </Navbar>
-        <Container fluid={true}>
-            <Row xs="1" md="2" className="row-eq-height align-items-center">
-                <Col className="align-center text-center">
-                    <Nav vertical>
-                        <NavLink href="https://github.com/amikht">
-                            Github
-                        </NavLink>
-                        <NavLink href="https://www.linkedin.com/in/aaron-t-software/">
-                            LinkedIn                            
-                        </NavLink>
-                    </Nav>
-                </Col>
-                <Col className="text-center">
-                    About Me:
-                </Col>
-            </Row>
-        </Container>
-
+        
+        <Row className="row" style={{minHeight: "100%", margin:0}}>
+            <Col className="landing-col"> {/* Name */}
+                <h1>Aaron<br />Thompson</h1>
+            </Col>
+            <Col className="landing-col"> {/* Planet */}
+                <div>
+                    <h2>placeholder lorem ipsum blah</h2>
+                    <p>
+Morbi libero urna, placerat eu fringilla et, dapibus non turpis. Morbi molestie, nunc quis faucibus hendrerit, odio nisi ultricies dolor, eu maximus neque nulla at diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec euismod eleifend tempor. Cras lobortis diam eu congue consectetur. Integer ante ex, blandit pharetra urna eget, commodo ullamcorper lacus. Cras eu lacus diam.
+                    </p>
+                </div>
+        </Col>
+        </Row>
     </div>
   )
 }
