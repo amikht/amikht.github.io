@@ -1,13 +1,28 @@
 body {
-    background-color: #bad4aa;
-    color: #292d29; 
+    background-color: #2d2929;
+    color: #f5f2ce;
+    font-family: Raleway;
+    font-size: 14pt;
 }
 
-
-.Navbar {
-    background-color: black;
+h1 {
+    font-family: Lato;
+    font-size: 64pt;
+    text-align: right;
 }
 
-.bg-dark {
-    background-color: #292d29;
+h2 {
+    font-family: Lato;
+    font-size: 48pt;
+}
+
+p {
+    font-family: Raleway;
+}
+
+.landing-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
 }
