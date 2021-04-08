@@ -27,7 +27,6 @@ export default function Home() {
                                 alt="Linked In"
                                 width={48}
                                 height={48}
-                                unoptimized="true"
                             />
                         </NavLink>
                     </NavItem>
@@ -40,7 +39,6 @@ export default function Home() {
                                 alt="Github"
                                 width={48}
                                 height={48}
-                                unoptimized="true"
                             />
                         </NavLink>
                     </NavItem>
@@ -53,7 +51,6 @@ export default function Home() {
                                 alt="Instagram"
                                 width={48}
                                 height={48}
-                                unoptimized="true"
                             />
                         </NavLink>
                     </NavItem>
@@ -66,7 +63,6 @@ export default function Home() {
                                 alt="Email"
                                 width={48}
                                 height={48}
-                                unoptimized="true"
                             />
                         </NavLink>
                     </NavItem>
