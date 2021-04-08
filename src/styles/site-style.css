@@ -8,7 +8,6 @@ body {
 h1 {
     font-family: Lato;
     font-size: 64pt;
-    text-align: right;
 }
 
 h2 {
@@ -27,16 +26,34 @@ p {
     margin:0;
 }
 
-.nav {
+.ico-nav {
     margin-top: 30px;
     justify-content: right;
+}
+
+.website-nav {
+    justify-content: center;
 }
 
 .nav-item {
     margin-left: 20px;
 }
 
-.nav-link { /* Removes default formatting from nav-links */
+.nav-item > .nav-link { /* Removes default formatting from nav-links */
     margin: 0;
     padding: 0;
+}
+
+.nav-link {
+    color: #a07178
+}
+.nav-link:hover {
+    color: #776274
+}
+
+a {
+    color: #a07178
+}
+a:hover {
+    color: #776274
 }
