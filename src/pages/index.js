@@ -22,12 +22,12 @@ export default function Home() {
                         <NavLink
                             href="https://www.linkedin.com/in/aaron-t-software/"
                             title="LinkedIn">
-                            <Image
+                            <Image fixed
                                 src="/LinkedIn.png"
                                 alt="Linked In"
                                 width={48}
                                 height={48}
-                                loader={imgLoader}
+                                unoptimized="true"
                             />
                         </NavLink>
                     </NavItem>
@@ -35,12 +35,12 @@ export default function Home() {
                         <NavLink
                             href="https://github.com/amikht"
                             title="Github">
-                            <Image
+                            <Image fixed
                                 src="/Github.png"
                                 alt="Github"
                                 width={48}
                                 height={48}
-                                loader={imgLoader}
+                                unoptimized="true"
                             />
                         </NavLink>
                     </NavItem>
@@ -48,12 +48,12 @@ export default function Home() {
                         <NavLink
                             href="https://www.instagram.com/ohsrryitsjustme/"
                             title="Instagram">
-                            <Image
+                            <Image fixed
                                 src="/Instagram.png"
                                 alt="Instagram"
                                 width={48}
                                 height={48}
-                                loader={imgLoader}
+                                unoptimized="true"
                             />
                         </NavLink>
                     </NavItem>
@@ -66,7 +66,7 @@ export default function Home() {
                                 alt="Email"
                                 width={48}
                                 height={48}
-                                loader={imgLoader}
+                                unoptimized="true"
                             />
                         </NavLink>
                     </NavItem>
