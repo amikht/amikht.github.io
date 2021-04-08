@@ -1,0 +1,6 @@
+bootstrap
+reactstrap
+node-sass
+react
+react-dom
+next

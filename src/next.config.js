@@ -1,5 +1,7 @@
-/*
 module.exports = {
-    basePath: '/'
+    images: {
+        loader: 'cloudinary',
+        path: 'https://res.cloudinary.com/aaronmakes-tech/'
+    }
 }
-*/
+
