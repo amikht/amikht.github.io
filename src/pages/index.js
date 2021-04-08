@@ -2,6 +2,10 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Row, Col, NavItem, NavLink, Nav } from 'reactstrap';
 
+const imgLoader = ({src, width, height}) => {
+    return src
+}
+
 export default function Home() {
   return (
     <div className="vh-100">
@@ -18,12 +22,12 @@ export default function Home() {
                         <NavLink
                             href="https://www.linkedin.com/in/aaron-t-software/"
                             title="LinkedIn">
-                            <img
+                            <Image
                                 src="/LinkedIn.png"
                                 alt="Linked In"
                                 width={48}
                                 height={48}
-
+                                loader={imgLoader}
                             />
                         </NavLink>
                     </NavItem>
@@ -31,11 +35,12 @@ export default function Home() {
                         <NavLink
                             href="https://github.com/amikht"
                             title="Github">
-                            <img
+                            <Image
                                 src="/Github.png"
                                 alt="Github"
                                 width={48}
                                 height={48}
+                                loader={imgLoader}
                             />
                         </NavLink>
                     </NavItem>
@@ -43,11 +48,12 @@ export default function Home() {
                         <NavLink
                             href="https://www.instagram.com/ohsrryitsjustme/"
                             title="Instagram">
-                            <img
+                            <Image
                                 src="/Instagram.png"
                                 alt="Instagram"
                                 width={48}
                                 height={48}
+                                loader={imgLoader}
                             />
                         </NavLink>
                     </NavItem>
@@ -55,11 +61,12 @@ export default function Home() {
                         <NavLink
                             href="mailto:amt4049@rit.edu"
                             title="Email">
-                            <img
+                            <Image
                                 src="/Mail.png"
                                 alt="Email"
                                 width={48}
                                 height={48}
+                                loader={imgLoader}
                             />
                         </NavLink>
                     </NavItem>
