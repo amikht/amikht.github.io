@@ -1,4 +1,4 @@
-# Misc setup to let Jarvis know which version of Node we are using
+# Misc setup to let Travis know which version of Node we are using
 language: node_js
 node_js:
   - 12
@@ -17,11 +17,12 @@ script:
   - cd ..
   - echo > out/.nojekyll # Tells Github not to use Jekyll
 
-# Information to let Jarvis know how to deploy the site properly
+# Information to let Travis know how to deploy the site properly
 deploy:
-  provider: pages # Lets Jarvis know this is a Github Pages site
+  provider: pages # Lets Travis know this is a Github Pages site
   skip_cleanup: true
-  github_token: $github_token #repo access token gathered from jarvis config
+  github_token: $github_token #repo access token gathered from travis config
+  fqdn: "www.aaronmakes.tech"
   local_dir: out
   on:
     branch: main
