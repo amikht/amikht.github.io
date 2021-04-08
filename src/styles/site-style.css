@@ -17,6 +17,8 @@ h2 {
 
 p {
     font-family: Raleway;
+    max-width: 725px;
+    min-width: 400px;
 }
 
 .landing-col {
@@ -27,8 +29,9 @@ p {
 }
 
 .ico-nav {
+    display: flex;
     margin-top: 30px;
-    justify-content: right;
+    justify-content: flex-end;
 }
 
 .website-nav {
