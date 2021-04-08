@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { Navbar, Container, Row, Col, NavItem, NavLink, NavbarBrand, Nav } from 'reactstrap';
+import { Row, Col, NavItem, NavLink, Nav } from 'reactstrap';
 
 export default function Home() {
   return (
@@ -12,10 +12,12 @@ export default function Home() {
         <Row className="row" style={{minHeight: "100%", margin:0}}>
             <Col className="landing-col"> {/* Name */}
                 <div>
-                <h1>Aaron<br />Thompson</h1>
-                <Nav>
+                <h1 style={{textAlign:"right"}}>Aaron<br />Thompson</h1>
+                <Nav className="ico-nav">
                     <NavItem> {/** LinkedIn Icon */}
-                        <NavLink href="https://www.linkedin.com/in/aaron-t-software/">
+                        <NavLink
+                            href="https://www.linkedin.com/in/aaron-t-software/"
+                            title="LinkedIn">
                             <Image
                                 src="/LinkedIn.png"
                                 alt="Linked In"
@@ -26,7 +28,9 @@ export default function Home() {
                         </NavLink>
                     </NavItem>
                     <NavItem> {/** Github Icon */}
-                        <NavLink href="https://github.com/amikht">
+                        <NavLink
+                            href="https://github.com/amikht"
+                            title="Github">
                             <Image
                                 src="/Github.png"
                                 alt="Github"
@@ -35,8 +39,10 @@ export default function Home() {
                             />
                         </NavLink>
                     </NavItem>
-                    <NavItem> {/** LinkedIn Icon */}
-                        <NavLink href="https://www.instagram.com/ohsrryitsjustme/" >
+                    <NavItem> {/** Instagram Icon */}
+                        <NavLink
+                            href="https://www.instagram.com/ohsrryitsjustme/"
+                            title="Instagram">
                             <Image
                                 src="/Instagram.png"
                                 alt="Instagram"
@@ -45,8 +51,10 @@ export default function Home() {
                             />
                         </NavLink>
                     </NavItem>
-                    <NavItem>
-                        <NavLink href="amt4049@rit.edu" >
+                    <NavItem> {/** Mail Icon */}
+                        <NavLink
+                            href="mailto:amt4049@rit.edu"
+                            title="Email">
                             <Image
                                 src="/Mail.png"
                                 alt="Email"
@@ -60,9 +68,22 @@ export default function Home() {
             </Col>
             <Col className="landing-col"> {/* Planet */}
                 <div>
-                    <h2>placeholder lorem ipsum blah</h2>
-                    <p>
-Morbi libero urna, placerat eu fringilla et, dapibus non turpis. Morbi molestie, nunc quis faucibus hendrerit, odio nisi ultricies dolor, eu maximus neque nulla at diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec euismod eleifend tempor. Cras lobortis diam eu congue consectetur. Integer ante ex, blandit pharetra urna eget, commodo ullamcorper lacus. Cras eu lacus diam.
+                    <h2 style={{textAlign:"center"}}>Not Just Making Tech</h2>
+                    <Nav className="website-nav">
+                        <NavLink href="/about">
+                            About Me
+                        </NavLink>
+                        <NavLink href="/blog">
+                            Blog
+                        </NavLink>
+                        <NavLink href="/projects">
+                            Projects
+                        </NavLink>
+                    </Nav>
+                    <p style={{maxWidth:"725px"}}>
+                        &emsp;I am a software engineer currently attending Rochester Institute of Technology, however I am also a musician, visual artist, and lifelong learner. I want to leave the world better than I left it, by whatever means are available to me. I aim to create software and art that brings people together.
+                        <br />
+                        &emsp;Feel free to drop me an email and recommend your favorite non-fiction book! I'm always open to suggestions and excited to learn about new topics. Right now I am on a business book kick, but I will take anything.
                     </p>
                 </div>
         </Col>
