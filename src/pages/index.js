@@ -83,7 +83,7 @@ export default function Home() {
                             Projects
                         </NavLink>
                     </Nav>
-                    <p style={{maxWidth:"725px"}}>
+                    <p>
                         &emsp;I am a software engineer currently attending Rochester Institute of Technology, however I am also a musician, visual artist, and lifelong learner. I want to leave the world better than I left it, by whatever means are available to me. I aim to create software and art that brings people together.
                         <br />
                         &emsp;Feel free to drop me an email and recommend your favorite non-fiction book! I'm always open to suggestions and excited to learn about new topics. Right now I am on a business book kick, but I will take anything.
