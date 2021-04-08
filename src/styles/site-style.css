@@ -26,3 +26,17 @@ p {
     align-items: center;
     margin:0;
 }
+
+.nav {
+    margin-top: 30px;
+    justify-content: right;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link { /* Removes default formatting from nav-links */
+    margin: 0;
+    padding: 0;
+}
