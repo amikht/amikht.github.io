@@ -18,7 +18,7 @@ export default function Home() {
                         <NavLink
                             href="https://www.linkedin.com/in/aaron-t-software/"
                             title="LinkedIn">
-                            <Image
+                            <img
                                 src="/LinkedIn.png"
                                 alt="Linked In"
                                 width={48}
@@ -31,7 +31,7 @@ export default function Home() {
                         <NavLink
                             href="https://github.com/amikht"
                             title="Github">
-                            <Image
+                            <img
                                 src="/Github.png"
                                 alt="Github"
                                 width={48}
@@ -43,7 +43,7 @@ export default function Home() {
                         <NavLink
                             href="https://www.instagram.com/ohsrryitsjustme/"
                             title="Instagram">
-                            <Image
+                            <img
                                 src="/Instagram.png"
                                 alt="Instagram"
                                 width={48}
@@ -55,7 +55,7 @@ export default function Home() {
                         <NavLink
                             href="mailto:amt4049@rit.edu"
                             title="Email">
-                            <Image
+                            <img
                                 src="/Mail.png"
                                 alt="Email"
                                 width={48}
